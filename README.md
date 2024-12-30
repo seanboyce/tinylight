@@ -12,7 +12,7 @@ Some older people were talking about getting up at night feeling a bit disorient
 # How much can you optimize a light?
 I'm glad you asked! It turns out, quite a bit.
 
-In the naive case, you connect an LED to a power source and a resistor. The power source causes current to flow through the LED light, limited by the resistor, and fiait lux! You're done.
+In the naive case, you connect an LED to a power source and a resistor. The power source causes current to flow through the LED light, limited by the resistor, and fiat lux! You're done.
 
 First, power is lost in the resistor (square of the current times resistance). So it's got to go. Thankfully, it turns out when you remove the current-limiting resistor in an LED, the current does NOT in fact go to infinity as per the simple equation we learn in high school. The relationship between current and voltage across a diode is nonlinear past the voltage drop -- but it's some finite number of electrons. So if we only turn the LED on for a very short time (microseconds), the amount of current transferred per unit of time will still be within specifications. So that's what we'll do.
 
