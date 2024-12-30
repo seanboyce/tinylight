@@ -18,7 +18,7 @@ First, power is lost in the resistor (square of the current times resistance). S
 
 However, your eye (like a video camera) does not have infinite speed. Our vision has persistence -- e.g. if you look at a light that's flashing fast enough, it will not appear to be flashing at all. So if we emit a burst of light for a tiny amount of time (microseconds), we can time it so that the light will appear much brighter than it actually is.
 
-Finally, we can also make the light visibly flash, having disting on and off times, to help attract attention.
+Finally, we can also make the light visibly flash, having distinct on and off times, to help attract attention.
 
 # What controls all this?
 
