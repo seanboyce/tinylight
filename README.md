@@ -1,6 +1,17 @@
 # tinylight
 This is tiny, battery-powered indicator light, optimized for long battery life.
 
+# BOM (per light)
+
+1x Attiny10
+1x 0402 RED SMT LED
+1x CR2032 battery holder
+1x CR2032 battery
+
+Optional:
+1x strong disk macgnet -- this will stick to the CR2032 battery. Now your light can stick to magnetic surfaces easily!
+2x 3-pin 2.54mm headers (likely you will just buy a big 2.54mm header set and break off two 3-pin pieces). These are handy for setting up a programmer.
+
 # So it's... just a battery-powered light?
 Yes! It's very good at doing it's job though. If you just do the obvious thing and connecte a battery + resistor + LED, the CR2032 battery will run out in 3 or 4 months.
 
@@ -25,3 +36,27 @@ Finally, we can also make the light visibly flash, having distinct on and off ti
 An ATTINY10 MCU. That's right, a whole computer. Although it's half the size of a grain of rice, and probably more powerful than what took the Apollo Program to the Moon the first time.
 
 It has a lot of great power-saving features. We'll be using the watchdog timer extensively. To make sure that we dont waste time (time is power!), we'll write up some code in Assembler. It's a very small program though, so this will be super easy.
+
+# How do I use it?
+
+You'll need to make or order circuit boards. I've included a PCB drawn in KiCAD -- this is tiled and includes V-Cuts, so you can snap them apart to get many units. Every manufacturer has different standards for V-Cuts! I've tried to adhere to what JLBPCB uses. This PCB layout should get you 120 units from a standard order of 5 boards.
+
+Note that the boards have holes you can add a header to. This will be important for programming, and lets you use and extra PCBs as cute little ATTINY10 development boards.
+
+# How do I get code on to the chip?
+
+You'll need a TPI programmer. You can use the Atmel-ICE, but thankfully an Arduino can be coerced to work too: https://github.com/james-tate/Arduino-TPI-Programmer
+
+A useful approach is to solder headers onto a board and connect up your arduino. Then, place an attiny10 on top of the pads with tweezers. Press it in place firmly with your finger, and then initiate programming. This works surprisingly well, but mind polarity or you will get SOT23-6 shaped burns on your finger.
+
+# How do I solder it!? It's so small!
+
+It's deceptively easy with solder paste and a hot air rework station. The type of solder paste in a sytinge is good. Squeeze some out onto a plastic sheet, then use a spare (through-hole) resistor to pick up a little of the paste and dab it onto the pads. There should be a visible mound of paste on each pad, not just a thin coat.
+
+Then drop the components in place with tweezers and heat up. The surface tension from the solder will make every part 'snap' into place. It's really fun to watch.
+
+You can hand-solder it too. Just tin one pad for each part, then heat up that pad to melt the solder. Push the relevant part into place with tweezers. That will hold the part in place. Apply solder to the other pads, then once more to the first pad. It won't look as pretty as solder paste, but it's easier than it looks.
+
+# Does it have to be red?
+
+Sort of? Red LEDs have the lowest voltage drop, so it's by far the most efficient in our case. I've tested with orange LEDs too. While less bright, it still basically works. Yellow might be tolerable too. Anything higher frequency than that, might not be practical.
