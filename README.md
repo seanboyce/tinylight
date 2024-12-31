@@ -4,8 +4,11 @@ This is tiny, battery-powered indicator light, optimized for long battery life.
 # BOM (per light)
 
 1x Attiny10
+
 1x 0402 RED SMT LED
+
 1x CR2032 battery holder
+
 1x CR2032 battery
 
 Optional:
