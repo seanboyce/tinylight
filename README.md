@@ -12,7 +12,9 @@ This is tiny, battery-powered indicator light, optimized for long battery life.
 1x CR2032 battery
 
 Optional:
+
 1x strong disk macgnet -- this will stick to the CR2032 battery. Now your light can stick to magnetic surfaces easily!
+
 2x 3-pin 2.54mm headers (likely you will just buy a big 2.54mm header set and break off two 3-pin pieces). These are handy for setting up a programmer.
 
 # So it's... just a battery-powered light?
