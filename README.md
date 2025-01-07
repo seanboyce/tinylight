@@ -1,5 +1,7 @@
 # tinylight
-This is tiny, battery-powered indicator light, optimized for long battery life.
+This is tiny, battery-powered indicator light, optimized for long battery life:
+
+![Photo of a finished light](https://github.com/seanboyce/tinylight/tinilight_IC.JPG)
 
 # BOM (per light)
 
