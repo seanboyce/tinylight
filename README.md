@@ -1,5 +1,5 @@
 # tinylight
-This is tiny, battery-powered indicator light, optimized for long battery life:
+This is a tiny, battery-powered indicator light, optimized for long battery life:
 
 ![Photo of a finished light](https://github.com/seanboyce/tinylight/blob/main/tinylight_IC.JPG)
 
